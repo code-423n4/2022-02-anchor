@@ -76,8 +76,8 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 ---
 
 # Anchor contest details
-- $162,350 main award pot
-- $7,650 gas optimization award pot
+- $162,350 UST (TerraUSD) main award pot
+- $7,650 UST (TerraUSD) gas optimization award pot
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2022-02-anchor-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
