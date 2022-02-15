@@ -1,3 +1,14 @@
+https://forum.an![Anchor_dark](https://user-images.githubusercontent.com/94420051/154133630-d7d07c32-7cb6-4bf3-a4df-3e597565bbf9.png)
+chorprotocol.com/
+# Anchor contest details
+- $162,350 UST (TerraUSD) main award pot
+- $7,650 UST (TerraUSD) gas optimization award pot
+- Join [C4 Discord](https://discord.gg/code4rena) to register
+- Submit findings [using the C4 form](https://code4rena.com/contests/2022-02-anchor-contest/submit)
+- [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
+- Starts February 24, 2022 00:00 UTC
+- Ends March 9, 2022 23:59 UTC
+
 **What is Anchor?**
 Anchor is a decentralized savings protocol offering low-volatile yields on Terra stablecoin deposits. The Anchor rate is powered by a diversified stream of staking rewards from major proof-of-stake blockchains, and therefore can be expected to be much more stable than money market interest rates.  The Anchor community believes that a stable, reliable source of yield in Anchor has the opportunity to become the reference interest rate in crypto. 
 The Anchor protocol defines a money market between a lender, looking to earn stable yields on their stablecoins, and a borrower, looking to borrow stablecoins on stakeable assets. To borrow stablecoins, the borrower locks up Bonded Assets (bAssets) as collateral, and borrows stablecoins below the protocol-defined borrowing ratio. The diversified stream of staking rewards accruing to the global pool of collateral then gets converted to stablecoin, and then conferred to the lender in the form of a stable yield. 
@@ -11,6 +22,9 @@ Anchor is an open, permissionless savings protocol, meaning that any third-party
 Further documentation of the Anchor Protocol is provided in the following pages.
 
 For more info see https://docs.anchorprotocol.com/
+
+
+This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
 [![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts/branch/master/graph/badge.svg?token=GSAL9XEWNH)](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts)
 
@@ -310,50 +324,11 @@ This repository is licensed under the Apache 2.0 license. See [LICENSE](./LICENS
 
 # ⭐️ Sponsor: Provide marketing details
 
-- [ ] Your logo (URL or add file to this repo - SVG or other vector format preferred)
-- [ ] Your primary Twitter handle
-- [ ] Any other Twitter handles we can/should tag in (e.g. organizers' personal accounts, etc.)
-- [ ] Your Discord URI
-- [ ] Your website
-- [ ] Optional: Do you have any quirks, recurring themes, iconic tweets, community "secret handshake" stuff we could work in? How do your people recognize each other, for example? 
-- [ ] Optional: your logo in Discord emoji format
+https://forum.an![Anchor_dark](https://user-images.githubusercontent.com/94420051/154133630-d7d07c32-7cb6-4bf3-a4df-3e597565bbf9.png)
+chorprotocol.com/
+- [ ] @anchor_protocol
+- [ ] @qubitn8 
+- https://discord.gg/sbmxNVXK
+https://www.anchorprotocol.com/
+https://app.anchorprotocol.com/
 
----
-
-# Contest prep
-
-## 🐺 C4: Contest prep
-- [ ] Rename this repo to reflect contest date (if applicable)
-- [ ] Rename contest H1 below
-- [ ] Add link to report form in contest details below
-- [ ] Update pot sizes
-- [ ] Fill in start and end times in contest bullets below.
-- [ ] Move any relevant information in "contest scope information" above to the bottom of this readme.
-- [ ] Add matching info to the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/blob/main/_data/contests/contests.csv))
-- [ ] Delete this checklist.
-
-## ⭐️ Sponsor: Contest prep
-- [ ] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
-- [ ] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2021-06-gro/blob/main/README.md))
-- [ ] Please have final versions of contracts and documentation added/updated in this repo **no less than 8 hours prior to contest start time.**
-- [ ] Ensure that you have access to the _findings_ repo where issues will be submitted.
-- [ ] Promote the contest on Twitter (optional: tag in relevant protocols, etc.)
-- [ ] Share it with your own communities (blog, Discord, Telegram, email newsletters, etc.)
-- [ ] Optional: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] Designate someone (or a team of people) to monitor DMs & questions in the C4 Discord (**#questions** channel) daily (Note: please *don't* discuss issues submitted by wardens in an open channel, as this could give hints to other wardens.)
-- [ ] Delete this checklist and all text above the line below when you're ready.
-
----
-
-# Anchor contest details
-- $162,350 UST (TerraUSD) main award pot
-- $7,650 UST (TerraUSD) gas optimization award pot
-- Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2022-02-anchor-contest/submit)
-- [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts February 24, 2022 00:00 UTC
-- Ends March 9, 2022 23:59 UTC
-
-This repo will be made public before the start of the contest. (C4 delete this line when made public)
-
-[ ⭐️ SPONSORS ADD INFO HERE ]
