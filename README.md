@@ -14,27 +14,318 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 # Contest setup
 
-## 🐺 C4: Set up repos
-- [ ] Create a new private repo named `YYYY-MM-sponsorname` using this repo as a template.
-- [ ] Get GitHub handles from sponsor.
-- [ ] Add sponsor to this private repo with 'maintain' level access.
-- [ ] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here. 
-- [ ] Delete this checklist and wait for sponsor to complete their checklist.
-
-## ⭐️ Sponsor: Provide contest details
 
 Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
-- [ ] Name of each contract and:
-  - [ ] source lines of code (excluding blank lines and comments) in each
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
-- [ ] Describe anything else that adds any special logic that makes your approach unique
-- [ ] Identify any areas of specific concern in reviewing the code
-- [ ] Add all of the code to this repo that you want reviewed
-- [ ] Create a PR to this repo with the above changes.
+[![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts/branch/master/graph/badge.svg?token=GSAL9XEWNH)](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts)
+
+# Anchor bAsset Contracts
+
+This monorepository contains the source code for the smart contracts implementing bAsset Protocol on the [Terra](https://terra.money) blockchain.
+
+You can find information about the architecture, usage, and function of the smart contracts on the official Anchor documentation [site](https://anchorprotocol.com/).
+
+
+## Contracts
+| Contract                                            | Reference                                              | Description                                                                                                                        |
+| --------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [`anchor_basset_hub`](https://github.com/Anchor-Protocol/anchor-bAsset-contracts/tree/master/contracts/anchor_basset_hub)|[doc](https://docs.anchorprotocol.com/smart-contracts/bluna/hub-1)| Manages minted bLunas and bonded Lunas
+| [`anchor_basset_reward`](https://github.com/Anchor-Protocol/anchor-bAsset-contracts/tree/master/contracts/anchor_basset_reward)|[doc](https://docs.anchorprotocol.com/smart-contracts/bluna/reward)|Manages the distribution of delegation rewards
+| [`anchor_basset_token`](https://github.com/Anchor-Protocol/anchor-bAsset-contracts/tree/master/contracts/anchor_basset_token)| [doc](https://github.com/Anchor-Protocol/anchor-bAsset-contracts/tree/master/contracts/anchor_basset_token)|CW20 compliance 
+| [`anchor_airdrop_registery`](https://github.com/Anchor-Protocol/anchor-bAsset-contracts/tree/master/contracts/anchor_airdrop_registry)| [doc](https://docs.anchorprotocol.com/smart-contracts/bluna/airdrop-registry)|Manages message fabricators for MIR and ANC airdrops
+## Development
+
+### Environment Setup
+
+- Rust v1.44.1+
+- `wasm32-unknown-unknown` target
+- Docker
+
+1. Install `rustup` via https://rustup.rs/
+
+2. Run the following:
+
+```sh
+rustup default stable
+rustup target add wasm32-unknown-unknown
+```
+
+3. Make sure [Docker](https://www.docker.com/) is installed
+
+### Unit / Integration Tests
+
+Each contract contains Rust unit tests embedded within the contract source directories. You can run:
+
+```sh
+cargo test unit-test
+cargo test integration-test
+```
+
+### Compiling
+
+After making sure tests pass, you can compile each contract with the following:
+
+```sh
+RUSTFLAGS='-C link-arg=-s' cargo wasm
+cp ../../target/wasm32-unknown-unknown/release/cw1_subkeys.wasm .
+ls -l cw1_subkeys.wasm
+sha256sum cw1_subkeys.wasm
+```
+
+#### Production
+
+For production builds, run the following:
+
+```sh
+docker run --rm -v "$(pwd)":/code \
+  --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
+  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
+  cosmwasm/workspace-optimizer:0.11.5
+```
+
+This performs several optimizations which can significantly reduce the final size of the contract binaries, which will be available inside the `artifacts/` directory.
+
+## License
+
+Copyright 2021 Anchor Protocol
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
+  
+[![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-bEth-contracts/branch/main/graph/badge.svg?token=1EGN3Z1YDN)](https://codecov.io/gh/Anchor-Protocol/anchor-bEth-contracts)
+
+# Anchor bEth Contracts
+
+This monorepository contains the source code for the smart contracts implementing bEth on the [Terra](https://terra.money) blockchain.
+
+You can find information about the architecture, usage, and function of the smart contracts on the official Anchor documentation [site](https://anchorprotocol.com/).
+## Development
+
+### Environment Setup
+
+- Rust v1.44.1+
+- `wasm32-unknown-unknown` target
+- Docker
+
+1. Install `rustup` via https://rustup.rs/
+
+2. Run the following:
+
+```sh
+rustup default stable
+rustup target add wasm32-unknown-unknown
+```
+
+3. Make sure [Docker](https://www.docker.com/) is installed
+
+### Unit / Integration Tests
+
+Each contract contains Rust unit tests embedded within the contract source directories. You can run:
+
+```sh
+cargo test unit-test
+cargo test integration-test
+```
+
+### Compiling
+
+After making sure tests pass, you can compile each contract with the following:
+
+```sh
+RUSTFLAGS='-C link-arg=-s' cargo wasm
+cp ../../target/wasm32-unknown-unknown/release/cw1_subkeys.wasm .
+ls -l cw1_subkeys.wasm
+sha256sum cw1_subkeys.wasm
+```
+
+#### Production
+
+For production builds, run the following:
+
+```sh
+docker run --rm -v "$(pwd)":/code \
+  --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
+  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
+  cosmwasm/workspace-optimizer:0.11.5
+```
+
+This performs several optimizations which can significantly reduce the final size of the contract binaries, which will be available inside the `artifacts/` directory.
+
+## License
+
+Copyright 2021 Anchor Protocol
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
+
+[![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-token-contracts/branch/main/graph/badge.svg?token=NK4H00P3KH)](https://codecov.io/gh/Anchor-Protocol/anchor-token-contracts)
+
+# Anchor Token (ANC) Contracts
+This monorepository contains the source code for the Money Market smart contracts implementing Anchor Protocol on the [Terra](https://terra.money) blockchain.
+
+You can find information about the architecture, usage, and function of the smart contracts on the official Anchor documentation [site](https://docs.anchorprotocol.com/smart-contracts/anchor-token).
+
+### Dependencies
+
+Anchor Token depends on [Terraswap](https://terraswap.io) and uses its [implementation](https://github.com/terraswap/terraswap) of the CW20 token specification.
+
+
+## Contracts
+
+| Contract                                 | Reference                                                                                         | Description                                                                    |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [`airdrop`](./contracts/airdrop)         | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/airdrop)   | Holds ANC tokens which are to be used Luna staker incentives                   |
+| [`collector`](./contracts/collector)     | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/collector) | Accumulates protocol fees, converts them to ANC and distributes to ANC stakers |
+| [`community`](../contracts/community)    | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/community) | Manages ANC community grants                                                   |
+| [`distributor`](./contracts/distributor) | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/dripper)   | Holds ANC tokens which are to be used as borrower incentives                   |
+| [`gov`](./contracts/gov)                 | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/gov)       | Handles Anchor Governance and reward distribution to ANC stakers               |
+| [`staking`](./contracts/staking)         | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/staking)   | Handles ANC-UST pair LP token staking                                          |
+| [`vesting`](./contracts/vesting)         | [doc](https://docs.anchorprotocol.com/smart-contracts/anchor-token/vesting)   | Holds ANC tokens which are to be used ANC token allocation vesting             |
+
+## Development
+
+### Environment Setup
+
+- Rust v1.44.1+
+- `wasm32-unknown-unknown` target
+- Docker
+
+1. Install `rustup` via https://rustup.rs/
+
+2. Run the following:
+
+```sh
+rustup default stable
+rustup target add wasm32-unknown-unknown
+```
+
+3. Make sure [Docker](https://www.docker.com/) is installed
+
+### Unit / Integration Tests
+
+Each contract contains Rust unit and integration tests embedded within the contract source directories. You can run:
+
+```sh
+cargo unit-test
+cargo integration-test
+```
+
+### Compiling
+
+After making sure tests pass, you can compile each contract with the following:
+
+```sh
+RUSTFLAGS='-C link-arg=-s' cargo wasm
+cp ../../target/wasm32-unknown-unknown/release/cw1_subkeys.wasm .
+ls -l cw1_subkeys.wasm
+sha256sum cw1_subkeys.wasm
+```
+
+#### Production
+
+For production builds, run the following:
+
+```sh
+docker run --rm -v "$(pwd)":/code \
+  --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
+  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
+  cosmwasm/workspace-optimizer:0.11.5
+```
+
+This performs several optimizations which can significantly reduce the final size of the contract binaries, which will be available inside the `artifacts/` directory.
+
+## License
+
+Copyright 2020 Anchor Protocol
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
+
+[![codecov](https://codecov.io/gh/Anchor-Protocol/money-market-contracts/branch/main/graph/badge.svg?token=B4B2YUSXEU)](https://codecov.io/gh/Anchor-Protocol/money-market-contracts)
+
+# Anchor Money Market Contracts
+A Rust and [CosmWasm](https://cosmwasm.com/) implementation of the Anchor Protocol money market on the [Terra blockchain](https://terra.money).
+
+You can find information about the architecture, usage, and function of the smart contracts in the [documentation](https://docs.anchorprotocol.com/).
+
+### Dependencies
+
+Money Market has dependencies on [Anchor Token Contracts](https://github.com/anchor-protocol/anchor-token-contracts) and [bAsset Contracts](https://github.com/Anchor-Protocol/anchor-bAsset-contracts).
+
+## Contracts
+
+| Contract                                               | Reference                                                                                  | Description                                                                   |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| [`overseer`](./contracts/overseer)                     | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/overseer)               | Manages money market overalls, stores borrower information                    |
+| [`market`](../contracts/market)                        | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/market)                 | Handles Terra stablecoin deposits and borrows, ANC distribution to borrowers  |
+| [`custody_bluna`](./contracts/custody_bluna)           | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/custody-bluna-specific) | Handles bLuna collateral deposits and withdrawals                             |
+| [`custody_beth`](./contracts/custody_beth)             | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/custody-beth)           | Handles bEth collateral deposits and withdrawals                              |
+| [`interest_model`](./contracts/interest_model)         | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/interest-model)         | Calculates the current borrow interest rate based on the market situation     |
+| [`distribution_model`](./contracts/distribution_model) | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/distribution-model)     | Calculates the borrower ANC emission rate based on the previous emission rate |
+| [`oracle`](./contracts/oracle)                         | [doc](https://docs.anchorprotocol.com/smart-contracts/money-market/oracle)                 | Provides a price feed for bAsset collaterals                                  |
+| [`liquidation`](./contracts/liquidation)               | [doc](https://docs.anchorprotocol.com/smart-contracts/liquidations)                        | OTC exchange contract for bAsset collateral liquidations                      |
+
+## Development
+
+### Environment Setup
+
+- Rust v1.44.1+
+- `wasm32-unknown-unknown` target
+- Docker
+
+1. Install `rustup` via https://rustup.rs/
+
+2. Run the following:
+
+```sh
+rustup default stable
+rustup target add wasm32-unknown-unknown
+```
+
+3. Make sure [Docker](https://www.docker.com/) is installed.
+
+### Unit / Integration Tests
+
+Each contract contains Rust unit and integration tests embedded within the contract source directories. You can run:
+
+```sh
+cargo unit-test
+cargo integration-test
+```
+
+### Compiling
+
+After making sure tests pass, you can compile each contract with the following:
+
+```sh
+RUSTFLAGS='-C link-arg=-s' cargo wasm
+cp ../../target/wasm32-unknown-unknown/release/cw1_subkeys.wasm .
+ls -l cw1_subkeys.wasm
+sha256sum cw1_subkeys.wasm
+```
+
+#### Production
+
+For production builds, run the following:
+
+```sh
+docker run --rm -v "$(pwd)":/code \
+  --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
+  --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
+  cosmwasm/workspace-optimizer:0.11.5
+```
+
+This performs several optimizations which can significantly reduce the final size of the contract binaries, which will be available inside the `artifacts/` directory.
+
+## License
+
+This repository is licensed under the Apache 2.0 license. See [LICENSE](./LICENSE) for full disclosure.
+
+© 2021 Anchor Protocol.
+
 
 ---
 
