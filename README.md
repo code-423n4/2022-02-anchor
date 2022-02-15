@@ -1,4 +1,16 @@
+**What is Anchor?**
+Anchor is a decentralized savings protocol offering low-volatile yields on Terra stablecoin deposits. The Anchor rate is powered by a diversified stream of staking rewards from major proof-of-stake blockchains, and therefore can be expected to be much more stable than money market interest rates.  The Anchor community believes that a stable, reliable source of yield in Anchor has the opportunity to become the reference interest rate in crypto. 
+The Anchor protocol defines a money market between a lender, looking to earn stable yields on their stablecoins, and a borrower, looking to borrow stablecoins on stakeable assets. To borrow stablecoins, the borrower locks up Bonded Assets (bAssets) as collateral, and borrows stablecoins below the protocol-defined borrowing ratio. The diversified stream of staking rewards accruing to the global pool of collateral then gets converted to stablecoin, and then conferred to the lender in the form of a stable yield. 
 
+Deposited stablecoins are represented by Anchor Terra (aTerra). aTerra tokens are redeemable for the initial deposit along with accrued interest, allowing interest collection to be done just by holding on to them. Anchor is structured to provide depositors with:
+*High, stable deposit yields powered by rewards of bAsset collaterals
+*Instant withdrawals through pooled lending of stablecoin deposits
+*Principal protection via liquidation of loans in risk of undercollateralization
+
+Anchor is an open, permissionless savings protocol, meaning that any third-party application is free to connect and earn interest without restrictions. Through Anchor Earn, Anchor.js or EthAnchor, developers can interact with Anchor using just a few lines of code.
+Further documentation of the Anchor Protocol is provided in the following pages.
+
+For more info see https://docs.anchorprotocol.com/
 
 [![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts/branch/master/graph/badge.svg?token=GSAL9XEWNH)](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts)
 
