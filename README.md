@@ -85,15 +85,6 @@ docker run --rm -v "$(pwd)":/code \
 
 This performs several optimizations which can significantly reduce the final size of the contract binaries, which will be available inside the `artifacts/` directory.
 
-## License
-
-Copyright 2021 Anchor Protocol
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
-See the License for the specific language governing permissions and limitations under the License.
-  
-[![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-bEth-contracts/branch/main/graph/badge.svg?token=1EGN3Z1YDN)](https://codecov.io/gh/Anchor-Protocol/anchor-bEth-contracts)
 
 # Anchor bEth Contracts
 
@@ -236,13 +227,6 @@ docker run --rm -v "$(pwd)":/code \
 
 This performs several optimizations which can significantly reduce the final size of the contract binaries, which will be available inside the `artifacts/` directory.
 
-## License
-
-Copyright 2020 Anchor Protocol
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
-See the License for the specific language governing permissions and limitations under the License.
 
 [![codecov](https://codecov.io/gh/Anchor-Protocol/money-market-contracts/branch/main/graph/badge.svg?token=B4B2YUSXEU)](https://codecov.io/gh/Anchor-Protocol/money-market-contracts)
 
