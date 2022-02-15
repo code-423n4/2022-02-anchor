@@ -319,7 +319,8 @@ This repository is licensed under the Apache 2.0 license. See [LICENSE](./LICENS
 
 © 2021 Anchor Protocol.
 
-
+Cross-chain Contract (placeholder - 80% coded -still private:
+Still in progress of being coded. Will use wormhole for cross-chain bridging and messages. 
 ---
 
 # ⭐️ Sponsor: Provide marketing details
