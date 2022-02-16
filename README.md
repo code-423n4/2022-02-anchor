@@ -1,5 +1,5 @@
-https://forum.an![Anchor_dark](https://user-images.githubusercontent.com/94420051/154133630-d7d07c32-7cb6-4bf3-a4df-3e597565bbf9.png)
-chorprotocol.com/
+![Anchor_dark](https://user-images.githubusercontent.com/94420051/154133630-d7d07c32-7cb6-4bf3-a4df-3e597565bbf9.png)
+
 # Anchor contest details
 - $162,350 UST (TerraUSD) main award pot
 - $7,650 UST (TerraUSD) gas optimization award pot
@@ -9,7 +9,7 @@ chorprotocol.com/
 - Starts February 24, 2022 00:00 UTC
 - Ends March 9, 2022 23:59 UTC
 
-**What is Anchor?**
+## What is Anchor?
 Anchor is a decentralized savings protocol offering low-volatile yields on Terra stablecoin deposits. The Anchor rate is powered by a diversified stream of staking rewards from major proof-of-stake blockchains, and therefore can be expected to be much more stable than money market interest rates.  The Anchor community believes that a stable, reliable source of yield in Anchor has the opportunity to become the reference interest rate in crypto. 
 The Anchor protocol defines a money market between a lender, looking to earn stable yields on their stablecoins, and a borrower, looking to borrow stablecoins on stakeable assets. To borrow stablecoins, the borrower locks up Bonded Assets (bAssets) as collateral, and borrows stablecoins below the protocol-defined borrowing ratio. The diversified stream of staking rewards accruing to the global pool of collateral then gets converted to stablecoin, and then conferred to the lender in the form of a stable yield. 
 
@@ -23,8 +23,6 @@ Further documentation of the Anchor Protocol is provided in the following pages.
 
 For more info see https://docs.anchorprotocol.com/
 
-
-This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
 [![codecov](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts/branch/master/graph/badge.svg?token=GSAL9XEWNH)](https://codecov.io/gh/Anchor-Protocol/anchor-bAsset-contracts)
 
@@ -322,14 +320,3 @@ This repository is licensed under the Apache 2.0 license. See [LICENSE](./LICENS
 Cross-chain Contract (placeholder - 80% coded -still private:
 Still in progress of being coded. Will use wormhole for cross-chain bridging and messages. 
 ---
-
-# ⭐️ Sponsor: Provide marketing details
-
-https://forum.an![Anchor_dark](https://user-images.githubusercontent.com/94420051/154133630-d7d07c32-7cb6-4bf3-a4df-3e597565bbf9.png)
-chorprotocol.com/
-- [ ] @anchor_protocol
-- [ ] @qubitn8 
-- https://discord.gg/sbmxNVXK
-https://www.anchorprotocol.com/
-https://app.anchorprotocol.com/
-
