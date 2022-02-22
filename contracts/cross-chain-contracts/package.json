@@ -1,0 +1,49 @@
+{
+  "name": "deployer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test --network ropsten",
+    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "start": "node --loader ts-node/esm --experimental-specifier-resolution=node src/index.ts",
+    "compile_eth": "npx hardhat compile",
+    "compile_terra": "cd terra && ./build.sh",
+    "deploy": "npx hardhat run scripts/bridge_deploy.ts --network ropsten",
+    "migrate_eth": "npx hardhat run scripts/migrate_eth.ts --network ropsten",
+    "migrate_terra": "npx hardhat run scripts/migrate_terra.ts --network ropsten",
+    "attest_token": "npx hardhat run scripts/attest_token.ts --network ropsten"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@certusone/wormhole-sdk": "^0.1.6",
+    "@improbable-eng/grpc-web-node-http-transport": "^0.15.0",
+    "@openzeppelin/contracts": "^4.4.2",
+    "@openzeppelin/contracts-upgradeable": "^4.4.2",
+    "@remix-project/remixd": "^0.5.5",
+    "@terra-money/terra.js": "^2.0.14",
+    "fs": "^0.0.1-security",
+    "npm": "^8.3.0",
+    "path": "^0.12.7",
+    "solc": "^0.8.11"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@openzeppelin/hardhat-upgrades": "^1.14.0",
+    "@ssen/prettier-config": "^2.0.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.8",
+    "chai": "^4.3.6",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.3",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
