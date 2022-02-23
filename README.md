@@ -317,7 +317,7 @@ This repository is licensed under the Apache 2.0 license. See [LICENSE](./LICENS
 
 © 2021 Anchor Protocol.
 
-# Cross-chain Contract (WIP, subject to changes):
+# Cross-chain Contract (Work in progress):
 
 ## Smart contract architecture:
 
