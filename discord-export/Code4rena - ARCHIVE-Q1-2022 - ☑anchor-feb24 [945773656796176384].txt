@@ -1,0 +1,134 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2022 / ☑anchor-feb24
+==============================================================
+
+[02/23/2022 4:38 PM] itsmetechjay
+👋 Hello and welcome to the contest channel for the $170K UST** Anchor **contest!
+
+📆 Contest opens February 24, 2022, at 0:00 UTC (in about 7.5 hours!) and runs through March 9, 2022 at 23:59 UTC (14 days).
+
+Please give a warm welcome to the Anchor team, particularly @systemv who will be available for questions either here in the channel or via DM. 
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+{Reactions}
+🥳 (6) nice (4) C4Keycap (4) 
+
+[02/24/2022 7:17 AM] dravee
+GM frens! I'll share some resources here:  
+https://twitter.com/timurguvenkaya/status/1475843655567089676?s=20
+https://academy.terra.money/courses/cosmwasm-smart-contracts-i
+
+{Embed}
+Timur Guvenkaya🦀 (@timurguvenkaya)
+https://twitter.com/timurguvenkaya/status/1475843655567089676?s=20
+How to start in Web3 hacking on Rust-based chains?  
+
+Web3 is more than EVM and Solidity. Hence, here are some foundations that you need to start hacking on Rust chains!🦀
+
+You may treat this thread as an addition to the fantastic @adrianhetman's tweet. 
+https://t.co/Gk7Tm2K3H4 https://t.co/4Vgg8q80Z9
+Likes
+115
+Code4rena - ARCHIVE-Q1-2022 - ☑anchor-feb24 [945773656796176384].txt_Files/FHs_-lrXwAEKH6W-A3B2C.jpg
+Twitter
+
+{Embed}
+https://academy.terra.money/courses/cosmwasm-smart-contracts-i
+CosmWasm Smart Contracts I
+Learn CosmWasm Smart Contracts! Dive right in with the Quick Start, then learn about coding in Rust, using CosmWasm libraries and the latest storage features, and testing and deploying. LUNA, SCRT and other blockchain-specific modules are coming too!
+Code4rena - ARCHIVE-Q1-2022 - ☑anchor-feb24 [945773656796176384].txt_Files/efxbwG2DRBySaqDOfkS4_CosmWasm%2520Title-D5185.png
+
+{Reactions}
+chefskiss (10) 
+
+[03/08/2022 9:25 AM] cmichel
+@systemv can you check DMs? I have some questions
+
+
+[03/08/2022 1:46 PM] bitn8
+Hey everyone, Nate from TFL, Anchor! Love all the hard work you have all been putting into this! with 14 billion in the protocol definitely has a lot stake and lot of people you are helping keep their funds safe!
+
+{Reactions}
+🎉 (2) 🐺 (2) anchor (3) 
+
+[03/08/2022 1:46 PM] bitn8
+Ill dm him and see
+
+
+[03/09/2022 2:44 PM] acegawd
+Doesn't @systemv answer DMs?
+
+
+[03/09/2022 9:09 PM] bitn8
+yeah i pinged him to check
+
+
+[03/09/2022 9:09 PM] bitn8
+did he not respond ?
+
+
+[03/09/2022 11:58 PM] acegawd
+Nope. It's counterproductive at this point.
+
+
+[03/10/2022 12:02 AM] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Anchor** contest is now closed! Huge thanks to everyone who participated🔍, whether you submitted a finding or not.
+
+What's next: Anchor's team will review the findings over the next couple of days, and then we'll pass them off to the judge. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+
+[03/10/2022 2:15 PM] bitn8
+thanks everyone for your your seriously hard work !
+
+{Reactions}
+hi5 (5) C4Keycap (5) 
+
+[08/10/2022 6:43 PM] 0x1f8b
+Any news? Is the judge penalized because this delay?
+
+
+[08/10/2022 8:30 PM] cloudellie
+I have responded to your posts in #❓questions
+
+
+[10/19/2022 12:18 AM] liveactionllamac4
+🤑 🎉 Awards for **Anchor**:
+
+$34,331.00 USDC » @cmichel 
+$28,522.99 USDC » WatchPug (@JtP | WATCHPUG & @Ming | WATCHPUG)
+$18,202.54 USDC » @jmak 
+$12,853.92 USDC » @csanuragjain 
+$9,341.58 USDC » BondiPestControl (@0xleastwood & @kirk-baird)
+$7,905.19 USDC » @DefSec 
+$7,300.23 USDC » hubble (@ksk2345 & @shri4net)
+$7,144.36 USDC » broccoli (@shw & @Jonah1005)
+$4,319.20 USDC » @hickuphh3 
+$1,766.75 USDC » @gzeon 
+$994.44 USDC » @0xwags 
+$918.16 USDC » @robee 
+$853.53 USDC » @IllIllI 
+$688.37 USDC » @0xliumin 
+$572.98 USDC » @cccz 
+$454.76 USDC » @0v3rf10w 
+
+High risk findings: 4 total, 3 unique
+Med risk findings: 17 total, 12 unique
+Gas optimizations: 8
+QA reports: 13
+
+Awards will be distributed on Polygon within the next 1-2 weeks. Congratulations all! 💸 💸 💸
+
+**A couple of notes about these awards:**
+1. While the contest awards were advertised in UST, C4 converted the UST funds to USDC for $0.89 on the dollar when UST started to decline in value. Therefore, all amounts shown here are in USDC (converted at the same rate we received), and funds will be paid out in USDC.
+2. Judging and triage fees were paid out of the total award pool for this contest.
+
+{Reactions}
+🎉 (10) 👑 (7) 
+
+==============================================================
+Exported 14 message(s)
+==============================================================
